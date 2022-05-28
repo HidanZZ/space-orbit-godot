@@ -51,6 +51,8 @@ property_name=1
 
 [display]
 
+window/size/width=504
+window/size/height=896
 window/dpi/allow_hidpi=true
 window/stretch/mode="2d"
 window/stretch/aspect="expand"

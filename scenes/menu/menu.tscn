@@ -28,19 +28,27 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0.176471, 0.682353, 0.647059, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = 229.0
 margin_bottom = -339.0
+rect_scale = Vector2( 0.692337, 0.993824 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Title" type="Label" parent="CenterContainer"]
-margin_left = 145.0
-margin_top = 89.0
-margin_right = 878.0
-margin_bottom = 172.0
+margin_left = 175.0
+margin_top = 237.0
+margin_right = 558.0
+margin_bottom = 320.0
 custom_fonts/font = SubResource( 5 )
-text = "Godot Game Template"
+text = "space orbit"
 uppercase = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -102,6 +110,7 @@ text = "<GodotVersion>"
 script = SubResource( 1 )
 
 [node name="Credits" type="VBoxContainer" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -129,18 +138,18 @@ text = "Crystal Bit community"
 
 [node name="Developer2" type="Label" parent="Credits"]
 visible = false
-margin_top = 86.0
-margin_right = 157.0
-margin_bottom = 125.0
+margin_top = 76.0
+margin_right = 243.0
+margin_bottom = 110.0
 grow_horizontal = 0
 custom_colors/font_color = Color( 0.886275, 0.87451, 0.87451, 1 )
 text = "Developer 2"
 
 [node name="Developer3" type="Label" parent="Credits"]
 visible = false
-margin_top = 129.0
-margin_right = 157.0
-margin_bottom = 168.0
+margin_top = 76.0
+margin_right = 243.0
+margin_bottom = 110.0
 grow_horizontal = 0
 custom_colors/font_color = Color( 0.886275, 0.87451, 0.87451, 1 )
 text = "Developer 3"
