@@ -8,18 +8,24 @@ extends ParallaxBackground
 
 export (float) var bg_speed=-1
 var angle = 0
+var start = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	angle += bg_speed * delta;
-	var offset = Vector2(sin(angle), cos(angle)) * Game.size.x;
-	var pos = Game.size/2 + offset
-	$ParallaxLayer.motion_offset= pos
-	$ParallaxLayer2.motion_offset= pos
+	if start:
+		angle += bg_speed * delta;
+		var offset = Vector2(sin(angle), cos(angle)) * Game.size.x;
+		var pos = Game.size/2 + offset
+		$ParallaxLayer.motion_offset= pos
+		$ParallaxLayer2.motion_offset= pos
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+func start():
+	start=true
+func stop():
+	start= false
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.pressed:

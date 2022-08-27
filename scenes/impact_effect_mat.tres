@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://scenes/impact_effect_shader.shader" type="Shader" id=1]
+[ext_resource path="res://assets/sprites/Waves.png" type="Texture" id=2]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/offsetStrength = 0.802
+shader_param/noiseTexture = ExtResource( 2 )
