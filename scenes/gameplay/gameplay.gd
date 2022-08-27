@@ -15,7 +15,7 @@ var tween_playing=false
 
 func shoot():
 	var b = Bullet.instance()
-#	
+	b.speed=clamp(((level-1)*10)+200,200,500)
 	b.transform = $center.transform
 	b.rotation+=(-rotation_speed/abs(rotation_speed))*-0.3
 	b.rotation+= rand_range(-PI/5,PI/5)

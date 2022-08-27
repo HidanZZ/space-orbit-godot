@@ -28,7 +28,7 @@ region = Rect2( 351, 1783, 116, 116 )
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
 atlas = ExtResource( 3 )
-region = Rect2( 598, 1196, 33, 33 )
+region = Rect2( 599, 1196, 32, 32 )
 
 [sub_resource type="Shader" id=5]
 code = "shader_type canvas_item;
