@@ -101,6 +101,9 @@ jobs:
         with:
           name: web
           path: build/web
+      - name: Install rsync 📚
+        run: |
+          apt-get update && apt-get install -y rsync
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
